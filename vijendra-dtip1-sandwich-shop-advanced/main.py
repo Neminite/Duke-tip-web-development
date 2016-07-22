@@ -13,7 +13,6 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-#Dank MEMEMEMEMEMMEMES
 import webapp2	
 form = """
 <form method ="post">
@@ -58,7 +57,7 @@ form = """
 </form>
 """
 
-
+#main handler function for root
 class MainHandler(webapp2.RequestHandler):
 	
 	def write_form(self,error ="",name =""):
@@ -91,19 +90,25 @@ class MainHandler(webapp2.RequestHandler):
 		if eggs:
 			total = total + 1
 
-		final_variable = "Thanks "+name+" for your business your total balance is :"+str(total - 1) 
+		final_variable = "Thanks "+name+" for your business your total balance is :$"+str(total - 1)
+
+		#this stuff is called validation 
 
 		if not name :
 			self.write_form("u need to put ur name there")
+		#there has to be one selected as that is complementary	
 		elif not(extracheese or avacado or eggs):
 			self.write_form("please select one we have this as complementary",name)
 		else:
+			# we are doing this as redirect can only take 1 parameter
 			self.redirect('/thanks?q='+final_variable) 		
 
 
 class ThanksHandler(webapp2.RequestHandler):
+	
 	def get(self):
-		self.response.out.write(self.request.get('q'))
+		final = self.request.get('q')
+		self.response.out.write(final)
 
 		
 app = webapp2.WSGIApplication([
