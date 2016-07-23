@@ -1,0 +1,74 @@
+	body{		
+		margin: 0;
+		padding: 30px;
+		background: #B5B5B5;
+		background-image: url(http://xzoneonline.appspot.com/images/stars.png);
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	a{color: #77985C;}
+	table{
+		width: 100%;
+		border: 1px solid #000;
+		background: #d3d3d3;
+	}
+	table th, table td{
+		margin: 0;
+		padding: 8px 20px;
+		text-align:center;
+		border-bottom: 1px solid #b5b5b5;
+	}
+	table th:first-child,
+	table td:first-child{
+		text-align: left;
+	}
+	table tr:nth-child(even){
+		background: #FFF;
+	}
+	caption{
+		color: #FFF;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	ul {
+    	list-style-type: none;
+    	margin: 0;
+    	padding: 0;
+		background-color: #FFF;
+	}
+	li {
+    	float: left;
+	}
+
+	li a {
+    	display: block;
+    	color:#bddfeb;
+    	padding: 14px 16px;
+    	text-decoration: none;
+	}
+	li a:hover {
+    background-color:#0066cc;
+	}
+	h1{
+		text-align: center;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	p {
+		color: white;
+		font-family: Helvetica, Arial, sans-serif;
+	}
+	h3{
+		color: white;
+		text-align: center;
+	}
+	span{
+		top: -80px;
+	}
+	#header{
+		padding:5px;
+		height: 50px;
+		width: 100%;
+		background-color: #101010;
+		border: 1px solid white;
+	}
+	tr:hover{
+		 background-color:white;
+	} 

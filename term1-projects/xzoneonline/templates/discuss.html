@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Discuss the Game!</title>
+		<link rel="stylesheet" href="../styles.css">
+	</head>
+	<style type = "text/css">
+		body{
+			font-family: Helvetica, Arial, sans-serif;
+			color:white;
+			text-align: center;
+		}
+		.error {
+			color: red;
+		}
+
+		label {
+			display: block;
+			font-size: 20px;
+			color:white
+		}
+
+		input[type = text] {
+			width: 400px;
+			height: 20px;
+			font-size: 20px;
+			padding: 2px;
+			text-align: center;		
+		}
+
+		textarea {
+			width: 400px;
+			height: 200px;
+			font-size: 17px;
+			font-family: Helvetica, Arial, sans-serif;
+		}
+
+		input[type = submit] {
+			font-size: 24px;
+			height: 100%;			
+		}
+
+		hr {
+			margin :20px auto;
+		}
+
+		.art + .art {
+			margin-top: 20px;
+		}
+		.art-body {
+			margin : 0;
+			font-size: 17px;
+			border-style: solid;
+			border-color: white;
+			word-wrap: break-word;
+		}
+		.body-container {
+			width: 700;
+			height: 100%;
+		}
+
+	</style>
+	<body>
+		<div id = "header">
+			<ul style>
+				<li><img src="images/xzonelogo.png"></li>
+				<li><a href="/">Home</a></li>
+				<li><a href="/news">News</a></li>
+				<li><a href="/forum">Forum</a></li>
+				<li><a href="/wiki">Wiki</a></li>
+			</ul>
+		</div>
+		<h1 style="color:white">Discuss the Game!</h1>
+		<form method="post">
+			<label>
+				<div>Username:</div>
+				<input type = "text" name = "title" value = "{{title}}">
+			</label>
+			<label>
+				<div>Message:</div>
+				<textarea name = "art">{{art}}</textarea>
+			</label>
+
+			<div class = "error"> {{error}} </div>
+			<input type="submit">
+		</form>
+		<hr>
+		{% for art in arts %}
+		{% if art.room == 'discuss'%}
+		<div class = "body-container">
+			<div class = "art">
+				<div class = "art-title" style="text-align: left">{{art.title}} </div>
+				<pre class = "art-body" style="text-align: left"> {{art.art}}</pre>
+			</div>
+		</div>
+		{% endif %}
+		{% endfor %}
+	</body>
+</html>

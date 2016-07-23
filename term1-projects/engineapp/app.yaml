@@ -1,0 +1,20 @@
+application: engineapp-1358
+version: 1
+runtime: python27
+api_version: 1
+threadsafe: yes
+
+handlers:
+- url: /Jabrfavicon4\.png
+  static_files: Jabrfavicon4.png
+  upload: Jabrfavicon4\.png
+- url: /resources
+  static_dir: resources
+- url: .*
+  script: main.app
+
+libraries:
+- name: webapp2
+  version: "2.5.2"
+- name: jinja2
+  version: latest

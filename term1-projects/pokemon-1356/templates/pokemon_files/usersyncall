@@ -1,0 +1,22 @@
+/**
+ **/
+
+var pixelLoad = function() {
+
+    this.urls = ["http://ads.altitude-arena.com/match?bidder_id=V8N4GGRTST2E9DOSUFV65IOIM8&external_user_id=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=5994332325","http://sync.adaptv.advertising.com/sync?type=gif&key=rhythmone&uid=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=5189106629","http://sync-user.c1exchange.com/sync/rhy?rhy_uid=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=3960334619","http://delivery.clickonometrics.pl/rhythmxchange/set-cookie?uid=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=8575807986","http://ad.afy11.net/ad?mode=7&publisher_dsp_id=49&external_user_id=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=2590572502","http://ebdr3.com/serve?rbg=1&dsp_id=414&dsp_uid=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=6971694392","http://x.fidelity-media.com/match.php?dsp=rhtm&uid=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=5547194552","http://rtb.gumgum.com/usersync?b=rhy&i=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=8751201242","http://ads.kiosked.com/match?bidder_id=4&external_user_id=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=5934819149","http://t4.liverail.com/?metric=csync&p=3073&s=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=6112150782","http://cs.lkqd.net/cs?partnerId=7&partnerUserId=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=6909792721","http://adserver.monarchads.com/sync/?pid=rhythmone&xid=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=5820368418","http://rtb.nativeads.com/user-sync?dsp=69792&t=image&uid=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=1585186376","http://us-u.openx.net/w/1.0/sd?id=537113070&val=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=5097729744","http://delivery.optimatic.com/4.5/webservice/cc.ashx?advertiser_id=r53y89m47m&uid=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=3178249346","http://image2.pubmatic.com/AdServer/Pug?vcode=bz0yJnR5cGU9MSZjb2RlPTMyMDMmdGw9NDMyMDA=&piggybackCookie=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=1481789697","http://bh.contextweb.com/bh/rtset?do=add&pid=558189&ev=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=5385919390","http://pixel.rubiconproject.com/tap.php?v=186028&nid=4112&put=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&expires=30&randcb=7365612291","http://sync.go.sonobi.com/us.gif?nw=rhythmxchange&nuid=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=6609553691","http://ce.lijit.com/merge?pid=56&3pid=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=2533617133","http://sync.search.spotxchange.com/partner?adv_id=8054&img=1&uid=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=7348692871","http://uat-net.technoratimedia.com:80/services?srv=cs&pid=25&uid=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=7271528968","http://udmserve.net/udm/fetch.pix?dt=1;roid=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=3059662126","http://ads.deliverimp.com/csm?b=R_RYTM&bid=RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5&randcb=4778132619","http://ib.adnxs.com/getuid?http%3A%2F%2Fsync.1rx.io%2Fusersync3%2Fappnexus%2F%2F%24UID%3Fzcc%3D1%26sspret%3D1&randcb=1830244280","http://x.bidswitch.net/sync?ssp=adconductor&randcb=5548994209","http://x.bidswitch.net/sync?ssp=adconductor&randcb=3525269601","http://match.basebanner.com/match?excid=35&cijs=0&randcb=3568411173","http://pm.w55c.net/ping_match.gif?st=RHYTHMONE&rurl=http%3A%2F%2Fsync.1rx.io%2Fusersync3%2Fdataxu%2F%2F_wfivefivec_%3Fzcc%3D1%26sspret%3D1&randcb=6489372884","http://ad.afy11.net/ad?mode=10&sspid=1185&randcb=3950779113","http://usersync.wdc.sl.rtb.g2trk.com/rhythmone?randcb=6610491492","http://rtb.gumgum.com/getuid/f850a142?r=http%3A%2F%2Fsync.1rx.io%2Fusersync%2Fgumgum%2F&randcb=926454416","http://px.owneriq.net/ero?redir=http%3A%2F%2Fsync.1rx.io%2Fusersync3%2Fowneriq%2F%2F%28OIQ_id%29%3Fzcc%3D1%26sspret%3D1&randcb=1209537069","http://match.adsrvr.org/track/cmf/generic?ttd_pid=adconductor&ttd_tpi=1&randcb=8771877324","http://sync.rhythmxchange.com/csync/RX-d1b331ed-0d36-4be8-bf64-fad2dc94a9b5?redir=pixel&randcb=7148042772"];
+
+    var self = this;
+
+    function makeImage(i)
+    {
+        "use strict";
+        var img = new Image();
+        img.src = self.urls[i];
+    }
+
+    for (var i = 0; i < this.urls.length; i++) {
+        makeImage(i);
+    }
+};
+
+pixelLoad();

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<title>Xzone Wiki</title>
+</head>
+<!--cursor: crosshair;-->
+<style>
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    border: 1px white;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: gray;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body style="text-color: #FFF" onload="startTime();">
+<!--DO NOT CHANGE THE LIST -->
+<div id = "header">
+	<ul style>
+		<li><img src="images/xzonelogo.png"></li>
+		<li><a href="/">Home</a></li>
+		<li><a href="/news">News</a></li>
+		<li><a href="/forum">Forum</a></li>
+		<li><a href="/wiki">Wiki</a></li>
+	</ul>	
+</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  <a href="#The Singleplayer Mode">The Singleplayer Mode</a>
+  <a href="#The Multiplayer Mode">The Multiplayer Mode</a>
+  <a href="#The Ships">The Ships</a>
+  <a href="#The exclusive ships">The Exclusive Ships of Fleet Wars</a>
+</div>
+<span style="font-size:30px;cursor:pointer; color: lightblue" onclick="openNav()"><img src="images/menubar.png" border="0" alt="menu bar"/></span>
+	<h2 style="color: white; text-align: center">The Official Xzone Wiki</h2>
+	<br>
+	<p>Xzone is a browser based, action oriented space shooter. There are two game modes; a singleplayer gamemode where you can attempt to survive against powerful bosses, and a multiplayer mode(not currently in the game yet) where you will be able to battle it out against other players from around the world! Everything in Xzone is pixelated and the game can run on almost anyone's system due to it being browser based.</p>
+	<a name="The Singleplayer Mode">
+	<br>
+	<h3>The Singleplayer Mode</h3>
+	<br>
+	<p>In the singleplayer portion of Xzone, there are three game modes. The first mode is Boss Fight. This mode is quite simple, where you fight a boss of your choice. The second game mode is Alien Rush. This is a mode where you try to survive against hordes and hordes and hordes of aliens that are being spawned by an alien mothership that is highly protected. This gamemode is meant only for extreme and skilled players. The final game mode is called Fleet Wars. This is where you are in command of a fleet of ships and have one mothership that generates resources and spawns your ships. The objective is to completely destroy the opponent's mothership. This gamemode includes a few ships not in the other gamemodes.</p>
+	<a name="The Multiplayer Mode">
+	<br>
+	<h3>The Multiplayer Mode (arriving soon)</h3>
+	<br>
+	<p>The multiplayer portion has a few more game modes than singleplayer. These include all of the modes in singleplayer plus some traditional modes including Team Deathmatch, Free for All and Mothership Protection. In Team Deathmatch, there are two teams; green and red. You get to choose which class of spacecraft you want and go shoot some things. The objective is to be the team to reach the kills goal before the opposing team does. If the goal has not been reached by the point at which the timer has run out, the team with the most kills wins. For Free for All, the objective is the same as Team Deathmatch except for the fact that everyone is on their own team. The final one is Mothership Protection, where you are on a team and have a mothership that you have to protect from the other team (The motherships will move around the map). Your goal is to destroy the opposing team's mothership.</p>
+	<a name="The Ships">
+	<br>
+	<h3>The Ships</h3>
+	<br>
+	<p>There are multiple types of ships in Xzone. These are very different and have varying strengths and weaknesses. There are four types of main, playable ships in every game mode besides Fleet Wars, which has almost twice as many vehicle including actual soldiers. The first main ship is called the Hawkwing, which shoots very powerful missiles that deal splash damage. The Hawkwing is a slow and heavily armored spaceship. Its tier two version is a little faster, more powerful, and shoots two missiles at a time. The next ship is the Eaglefire. It shoots basic, medium damage, laser bullets and a low power missile and has medium armor. The Eaglefire has medium speed and when upgraded, shoots two laser bullets at a time, has better speed, and gets slightly stronger armor. The Lasereye, the third ship, shoots a very powerful laser at an extremely slow speed. The Lasereye is a slow to medium speed ship that has medium armor. The tier two upgrade gives the Lasereye a slightly faster reload speed, medium movement speed, and a slightly more powerful laser. The fastest ship in the game, nicknamed the Hornet, has a very high movement speed, light armor and a low damage machine gun with fast reload speed. You would not want to get in a game of tag with these guys! When upgraded to tier two, these little suckers have an even faster speed and a little better armor. The machine gun only shoots a little faster. The final ship that you cannot control in most of the modes is the Mothership, which is a giant circle with a laser, extremely heavy armor, slow movement speed, and a bunch of onboard cannons. In some game modes the objective is to protect your Mothership and destroy your opponent's.</p>
+	<br>
+	<img src="images/ships.png" border="0" alt="Ships photo"/>
+
+	<img src="images/scouts.png" border="0" alt="Scouts photo">
+
+	<img src="images/motherships.png" border="0" alt="Motherships photo"/>
+	<a name="The exclusive ships">
+	<br>
+	<h3>The Exclusive Ships of Fleet Wars</h3>
+	<br>
+	<p>There are a few ships that are only available in the Fleet Wars game mode. They are made specifically to fill in roles needed in Fleet Wars and not in any other game mode. The first ship is the Carrier. This ship can carry 10 soldier units at once and has medium armor with no guns whatsoever. The soldiers can shoot out through the doors though and the bullets do not travel very far. The next "unit" is the soldier. They are lightly armored people with medium damage assault rifles. They are reasonably fast for people and can also throw grenades. When upgraded, they get impenetrable body armor, but are still vulnerable to head and leg shots. The assault rifles will also get armor piercing rounds, which are more effective in battle.
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+
+</html>

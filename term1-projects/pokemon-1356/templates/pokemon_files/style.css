@@ -1,0 +1,746 @@
+html, body {
+    height: 100%;
+}
+
+
+#masthead {
+	position: fixed;
+	z-index: 1000;
+	top: 0px;
+}
+body {
+    background: url("http://www.smashcustommusic.com/images/main_bg.png") repeat-y scroll 50% 0 #CCCCCC;
+    margin: 0;
+    padding-bottom: 0;
+}
+#modify {
+    margin-top: 27px;
+}
+#modify button {
+    font-size: 18px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 0 6px;
+}
+.error_messages {
+    background-color: #FFEAEA;
+    border-bottom: 1px solid #FF9595;
+    border-top: 1px solid #FF9595;
+    font-size: 90%;
+    line-height: 1;
+    margin: 10px 0;
+    padding: 10px 8px;
+}
+#gamesel {
+    margin-left: 0;
+    width: 329px;
+}
+dt {
+    display: block;
+}
+#comments-block {
+    margin: 0 15px 0 9px;
+}
+dl {
+    display: block;
+}
+.error_messages h3, .notice_messages h3, .success_messages h3 {
+    border: 0 none;
+    margin-bottom: 5px;
+    padding: 0;
+}
+#ietest {
+    padding: 15px;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+#loginbox {
+    color: #000000;
+    float: right;
+    font-size: 11px;
+    height: 60px;
+    padding-top: 8px;
+    position: relative;
+    width: 310px;
+}
+#footer {
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    text-align: right;
+}
+#pageheader {
+    position: relative;
+    text-align: center;
+}
+td img {
+    cursor: pointer;
+    display: block;
+    height: 1.2em;
+    margin: 2px auto;
+}
+#page {
+    background: url("http://www.smashcustommusic.com/images/main_bg.png") repeat-y scroll 50% 0 #CCCCCC;
+    min-height: 100%;
+}
+* html #container {
+    height: 100%;
+}
+tr#tabheader, tr.tabheader {
+    background-color: #CCCCCC;
+    color: #777777;
+    cursor: pointer;
+    font-weight: 700;
+    height: 2.65em;
+    text-align: center;
+    vertical-align: middle;
+}
+#container {
+    background: url("http://www.smashcustommusic.com/images/main_bg.png") repeat-y scroll 50% 0 #CCCCCC;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+}
+#prevcontent {
+    border-style: solid;
+    border-width: 0;
+    margin: 0 auto;
+    position: relative;
+    width: 900px;
+}
+#prevleft {
+    margin-left: 50px;
+    width: 440px;
+}
+#prevright {
+    left: 530px;
+    position: absolute;
+    top: 20px;
+    width: 300px;
+}
+#prevsub {
+    position: relative;
+}
+a {
+    color: #000000;
+    text-decoration: none;
+}
+li {
+    display: list-item;
+}
+ol, ul {
+    list-style: none outside none;
+}
+a:hover {
+    border: medium none;
+    color: #CD5C5C;
+    text-decoration: none;
+}
+.invlink:hover {
+    color: #000000;
+}
+.lend1 {
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+}
+.lstart1 {
+    padding-left: 5px;
+    padding-right: 3px;
+    text-align: center;
+}
+.srate1 {
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: center;
+}
+.dlcount {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.dlcount1 {
+    display: none;
+}
+.origin {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: right;
+    vertical-align: middle;
+}
+.creator {
+    padding-left: 3px;
+    padding-right: 0;
+    text-align: center;
+}
+.name {
+    padding-left: 0;
+    padding-right: 0;
+    vertical-align: middle;
+}
+.length {
+    padding-left: 0;
+    padding-right: 3px;
+    text-align: center;
+}
+.ltype {
+    padding-left: 7px;
+    padding-right: 5px;
+    text-align: center;
+}
+.hyphen {
+    padding-left: 0;
+    padding-right: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+.size {
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: center;
+    white-space: nowrap;
+}
+.download {
+    cursor: default;
+    padding-left: 3px;
+    padding-right: 3px;
+    text-align: center;
+}
+.youtube {
+    padding-left: 7px;
+    padding-right: 5px;
+    text-align: center;
+}
+.preview {
+    cursor: default;
+    margin: 0;
+    padding-left: 3px;
+    padding-right: 6px;
+    text-align: center;
+    vertical-align: middle;
+}
+.previewimg {
+    cursor: pointer;
+    display: inline;
+    height: 1.2em;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.aimg {
+    display: inline;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+#table {
+    font-size: 10pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+#thread {
+	border: 1px solid black;
+}
+	
+td {
+    padding-left: 5px;
+    padding-right: 5px;
+    vertical-align: middle;
+}
+.odd {
+    background-color: #E7E7E7;
+}
+.even {
+    background-color: #FFFFFF;
+}
+.stage {
+	background-color: yellow;
+}
+.on {
+    background-color: #537A6C;
+    text-align: center;
+}
+.off {
+    background-color: #FFFFFF;
+    text-align: center;
+}
+.audio {
+    display: block;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+#header {
+    background: url("images/banner2.png") no-repeat;
+    background-position: center;
+}
+#navigation {
+	background: rgb(109,179,242);
+	background: -moz-linear-gradient(top,  rgba(109,179,242,1) 0%, rgba(84,163,238,1) 50%, rgba(54,144,240,1) 51%, rgba(30,105,222,1) 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(109,179,242,1)), color-stop(50%,rgba(84,163,238,1)), color-stop(51%,rgba(54,144,240,1)), color-stop(100%,rgba(30,105,222,1)));
+	background: -webkit-linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+	background: -o-linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+	background: -ms-linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+	background: linear-gradient(top,  rgba(109,179,242,1) 0%,rgba(84,163,238,1) 50%,rgba(54,144,240,1) 51%,rgba(30,105,222,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6db3f2', endColorstr='#1e69de',GradientType=0 );
+    height: 26px;
+    position: relative;
+    text-align: center;
+}
+.navbut {
+    color: #FFFFFF;
+    display: inline;
+    font-size: 17px;
+    font-weight: 300;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-shadow: 0px -1px rgba(0,0,0,0.3);
+}
+.navimg:hover {
+    color: #ddd;
+}
+#masthead, .submit, .text {
+    font: 11px arial,helvetica,sans-serif;
+}
+textarea {
+    font-size: 12px;
+    width: 80%;
+}
+img {
+    border-width: 1;
+}
+input:focus, button:focus {
+    outline: 0 none;
+}
+#masthead {
+    height: 103px;
+    margin: 0 auto;
+    width: 100%;
+}
+#header, #searchbox, #quicknav, #quicknav a, #platformlist, #masthead  {
+    background-color: #5C72A4;
+}
+#masthead .mh_wrap {
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0;
+    width: 900px;
+}
+#masthead input {
+    vertical-align: top;
+}
+#masthead select {
+    height: 18px;
+    vertical-align: top;
+}
+#loginbox .msg {
+    font-weight: 700;
+    margin: 0 0 5px 15px;
+    padding: 13px 0 0;
+}
+#loginbox .nav {
+    margin-left: 15px;
+}
+#loginbox .nav a {
+    color: #000000;
+    font-weight: 400;
+    line-height: 11px;
+    margin-right: 6px;
+    padding-right: 5px;
+}
+#loginbox .nav a b {
+    font-weight: 400;
+}
+#loginbox form {
+    color: #000000;
+    padding: 5px 10px 0;
+}
+#loginbox form a {
+    color: #000000;
+    font-weight: 400;
+}
+#loginbox form input {
+    background: none repeat scroll 0 0 transparent;
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+}
+#loginbox form label {
+    float: left;
+    height: 15px;
+    margin: -15px 0 0;
+    position: relative;
+}
+#loginbox span.data {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 2px inset #333333;
+    display: block;
+    height: 14px;
+    overflow: hidden;
+    padding: 1px;
+}
+#loginbox span.data input {
+    width: 100%;
+}
+#loginbox span.submit {
+    border: 1px solid #3331B8;
+    display: block;
+    height: 22px;
+    width: 48px;
+}
+#loginbox span.submit span {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 #CED0FF;
+    border-color: #EFEFFE #D7D7FD #D7D7FD #EFEFFE;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    overflow: hidden;
+}
+#loginbox span.submit input {
+    color: #666666;
+    font-weight: 700;
+    height: 20px;
+    text-align: center;
+    width: 100%;
+}
+#loginbox ol.fields {
+    height: auto;
+    white-space: nowrap;
+    width: 100%;
+}
+#loginbox li.field {
+    height: 20px;
+    margin: 0 5px 0 0;
+    overflow: hidden;
+    padding: 15px 0 0;
+}
+#loginbox li.email {
+    width: 115px;
+}
+#loginbox li.password {
+    width: 95px;
+}
+#loginbox li.submit {
+    height: 24px;
+    margin: 0;
+    padding: 13px 0 0;
+    width: 50px;
+}
+#loginbox li.submit input {
+    cursor: pointer;
+}
+input.go, span.go, .btn, .btn .btn_wrap {
+    background: url("http://gamefaqs.com/images/default/btn_v10.gif") no-repeat scroll 0 0 transparent;
+    height: 24px;
+    overflow: hidden;
+}
+.btn, .btn button, .btn input, .btn span {
+    color: #333333;
+    cursor: pointer;
+    font: bold 11px/24px arial,helvetica,sans-serif;
+}
+.btn, .btn .btn_wrap {
+    float: left;
+    text-align: center;
+}
+.btn {
+    background-position: 0 -50px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.btn .btn_wrap {
+    background-position: right -100px;
+    margin: 0 0 0 8px;
+    padding: 0 8px 0 0;
+}
+.btn button, .btn input {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    color: #333333;
+    font-size: 11px;
+    font-weight: 700;
+    height: 100%;
+    line-height: 24px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+.btn button span {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+input.go, span.go {
+    border: 0 none;
+    text-align: center;
+    width: 30px;
+}
+span.go {
+    position: relative;
+}
+form ol.fields {
+    height: 1%;
+    list-style: none outside none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+}
+form li.field {
+    float: left;
+    width: 100%;
+}
+#header, #header .mh_wrap {
+    height: 77px;
+}
+.captcha, .lend, .lstart, .srate, .origin1, .creator1, .length1, .ltype1, .hyphen1, .size1, .download1, .preview1 {
+    display: none;
+}
+#myytplayer, .choice, div, form {
+    display: block;
+}
+a img, #loginbox .nav a.last {
+    border: medium none;
+}
+.preview2, .preview2:hover {
+    display: inline;
+    margin: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+.navimg, button, div, form, iframe {
+    margin: 0;
+    padding: 0;
+}
+.navimg {
+    color: white;
+}
+.comment-author {
+    color: black;
+    font-size: 97%;
+    font-weight: normal;
+    line-height: 1.5em;
+    margin-bottom: 1em;
+    padding: 0 0 0 20px;
+    text-align: left;
+}
+.comment-body {
+}
+.avatar-comment-indent {
+    font: 100% Arial,sans-serif;
+}
+.comment-author a:link {
+    color: #0033CC;
+    text-decoration: none;
+}
+.comment-author a:visited {
+    color: #0033CC;
+    text-decoration: none;
+}
+div#ACS_Comments_Container {
+    background-color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+div#ACS_Admin_Container {
+    text-align: center;
+}
+div#ACS_Comments_Container, div#ACS_Comments_Container button, div#ACS_Comments_Container input, div#ACS_Comments_Container textarea, div#ACS_Comments_Container select, div#ACS_Admin_Container, div#ACS_Admin_Container select, div#ACS_Admin_Container input {
+    color: #000000;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 15px;
+}
+div#ACS_Admin_Container table {
+    border: 1px solid #666666;
+}
+div#ACS_Admin_Container table th {
+    background-color: #666666;
+    color: #FFFFFF;
+    text-align: left;
+}
+div#ACS_Admin_Container table td {
+    text-align: left;
+    vertical-align: top;
+}
+div#ACS_Admin_Container table td div {
+    overflow: auto;
+}
+tr.ACS_Admin_colored {
+    background-color: #EEEEEE;
+}
+div#ACS_Comments_Container a, div#ACS_Admin_Container a {
+}
+div.ACS_error_message {
+    background-color: #FF9900;
+    border: 1px solid #FF0033;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px;
+}
+div.ACS_success_message {
+    background-color: #33CC66;
+    border: 1px solid #009966;
+    color: #FFFFFF;
+    font-weight: bold;
+    margin: 10px 0;
+    padding: 10px;
+}
+div#ACS_Comments_Container h1, div#ACS_Admin_Container h1 {
+    color: #2D8275;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+div.ACS_Comment_FormTitle {
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+.ACS_Comment_Form {
+    background-color: #FFFFFF;
+    background-position: left top;
+    background-repeat: repeat-x;
+    border: 1px solid #CCCCCC;
+    color: #5E5E5E;
+    padding: 6px;
+    width: 90%;
+}
+.ACS_Comment_FormFocus {
+    border: 1px solid #888888;
+}
+.ACS_Comment_FormError {
+    border: 1px solid #FF4444;
+}
+textarea.ACS_Comment_Form {
+    height: 300px;
+}
+button#ACS_newCommentSubmit {
+    background-color: #FFFFFF;
+    background-position: left top;
+    background-repeat: repeat-x;
+    border: 1px solid #CCCCCC;
+    color: #8DA486;
+    height: 34px;
+    margin-top: -20px;
+    padding: 6px;
+}
+button#ACS_newCommentSubmit img {
+    border: medium none;
+    height: 14px;
+    margin: 0;
+    padding-bottom: 2px;
+    vertical-align: text-bottom;
+    width: 14px;
+}
+.comment-button {
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    color: #0033CC;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 12px;
+    height: 2.0833em;
+    letter-spacing: normal;
+    line-height: normal;
+    margin-left: 2px;
+    margin-right: 2px;
+    overflow: visible;
+    padding: 0 0.5em;
+    text-indent: 0;
+    text-shadow: none;
+    text-transform: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    word-spacing: normal;
+}
+.button-number-active {
+    margin: 0;
+    padding: 0;
+}
+div.ACS_Comment {
+    margin-bottom: 20px;
+}
+div.ACS_Comment img {
+    left: 10px;
+    position: relative;
+    top: 18px;
+}
+div.ACS_Comment_Meta {
+    border-bottom: 1px solid #E8E7D0;
+    border-top: 2px solid #E8E7D0;
+    overflow: hidden;
+    padding: 2px 0 2px 53px;
+}
+span.ACS_Comment_Name {
+    color: #E58712;
+    font-weight: bold;
+    overflow: hidden;
+}
+div.ACS_Comment_Body {
+    background-color: #FAFAF0;
+    border-bottom: 1px solid #E8E7D0;
+    color: #444444;
+    min-height: 50px;
+    overflow: auto;
+    padding: 5px;
+}
+div.ACS_progressContainer {
+    height: 20px;
+    margin: 2px 0 5px;
+}
+div.ACS_progress {
+    background-color: #799470;
+    color: #FFFFFF;
+    display: none;
+    height: 20px;
+    overflow: hidden;
+    padding-left: 5px;
+    text-align: center;
+    width: 1px;
+}
+img#ACS_newCommentRememberName {
+    vertical-align: text-bottom;
+}
+div.ACS_slider {
+    background-position: left top;
+    background-repeat: repeat-x;
+    border: 1px solid #CCCCCC;
+    float: left;
+    height: 32px;
+    padding: 0;
+    width: 200px;
+}
+div.ACS_slider div.ACS_knob {
+    background: none repeat scroll 0 0 #E58712;
+    height: 32px;
+    width: 32px;
+}
+.comment-container {
+    margin-bottom: 33px;
+    margin-top: 3px;
+}
+div.ACS_slider div.ACS_knob img {
+    padding: 5px 0 0 8px;
+}
+.ACS_lightGrey {
+    color: #CCCCCC;
+}
+#login_email {
+    background-color: #FFFFFF;
+}
+#login_email, #login_password {
+    background-color: #FFFFFF;
+}

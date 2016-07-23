@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <img class="picOutline" src="" alt="Profile Picture" style="float:left;width:140px;height:180px;">
+        <strong><h1>{{name}}</h1></strong>
+        
+        <title>{{name}}'s Profile</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        #bio{
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 105%;
+            border-style: none;
+            padding: 5px;
+            margin-top: 3px;
+            margin-bottom: 3px;
+        }
+        .picOutline {
+            border: 1px solid black;
+            padding: 0px;
+            margin: 5px;
+        }
+    </style><hr>
+    </head>
+    <body>
+      <h3>Bio:</h3>
+      <div id="bio">
+          {{biography}}
+      </div>
+    </body>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>PokeSite</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<style>
+	body {
+	position: relative;
+	}
+	</style>
+	</head>
+	<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+	<div class="navbar-header">
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	<span class="icon-bar"></span>
+	</button>
+	<a class="navbar-brand" href="/">PokeSite</a>
+	</div>
+	<div>
+	<div class="collapse navbar-collapse" id="myNavbar">
+	<ul class="nav navbar-nav">
+	<li class="dropdown"><a href="/">Home</a></li>
+	<li><a href="/store">Store</a></li>
+	<li><a href="/tips">Tips and Tricks</a></li>
+	<li><a href="/chat">Forum</a></li>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	</nav>
+	</style>
+	</body>
+	<head>
+		<br><br><title>Pokemon Chat Room</title>
+	</head>
+
+	<style type = "text/css">
+		
+		body{
+			font-family: sans-serif;
+			width: 800px;
+			margin: 0 auto;
+			padding: 10px;
+			background-image: url("http://orig02.deviantart.net/40e5/f/2012/210/c/5/dragonite_by_inversidom_riot-d5942jf.png");
+		}
+		.error {
+			color: red;
+		}
+
+		label {
+			display: block;
+			font-size: 20px;
+		}
+
+		input[type = text] {
+			width: 400px;
+			height: 20px;
+			font-size: 20px;
+			padding: 2px;		
+		}
+
+		textarea {
+			width: 400px;
+			height: 200px;
+			font-size: 17px;
+			font-family: monospace;
+		}
+
+		input[type = submit] {
+			font-size: 24px;			
+		}
+
+		hr {
+			margin :20px auto;
+		}
+
+		.comment + .comment {
+			margin-top: 20px;
+		}
+		.comment-body {
+			margin : 0;
+			font-size: 17px;
+		}
+
+	</style>
+	<body>
+		<h1 style ="font-size:400%;color:blue;">Pokemon Chat Room</h1>
+		<h1 style="color:blue;">Created By: Caleb, From The RC Group That Is The Very Best Like No Group Ever Was!</h1>
+
+		<form method="post">
+			<label>
+				<div> <p style="color:blue;">Name</p> </div>
+				<input type = "text" name = "name" value = "{{name}}">
+			</label>
+			<label>
+				<div> <p style="color:blue;">Comment</p> </div>
+				<textarea name = "comment">{{comment}}</textarea>
+			</label>
+
+			<div class = "error"> {{error}} </div>
+			<input type="submit">
+		</form>
+		<hr>
+		<div class = "comment">
+		
+		{% for comment in comments %}
+		<div class = "comment-name" style= "color:blue">{{comment.name}}</div>
+				{% if 'http' in comment.comment %}
+					{% if 'youtube' in comment.comment %}	
+						<iframe src="{{comment.comment}}" "width:304px" "height:228px">
+					{% else %}
+						<img src="{{comment.comment}}" alt="Pic" style="width:304px;height:228px;">
+					{% endif %}
+				{% endif %}
+				
+				<pre class = "comment-boby" style= "color:blue">{{comment.comment}}</pre>
+		{% endfor %}
+		</font>
+		</div>
+	</body>
+</html>

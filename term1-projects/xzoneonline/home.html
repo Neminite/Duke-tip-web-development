@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head> <!--contains the js-->
+	<link rel="stylesheet" href="styles.css">
+	<title>Xzone</title>
+	<script language="javascript" type="text/javascript">
+	var timerid = 0;
+	var images = new Array(	"http://i1196.photobucket.com/albums/aa401/albertsun0000/pic2_zpskelpkjoo.png",
+			"http://i1196.photobucket.com/albums/aa401/albertsun0000/pic_zps6y0s9ztt.png",
+			"http://i1196.photobucket.com/albums/aa401/albertsun0000/pic3_zpsbsmwrkxi.png")
+	var countimages = 0;
+	function startTime()
+	{
+		if(timerid)
+		{
+			timerid = 0;
+		}
+		var tDate = new Date();
+
+		if(countimages == images.length)
+		{
+			countimages = 0;
+		}
+		if(tDate.getSeconds() % 5 == 0)
+		{
+			document.getElementById("img1").src = images[countimages];
+		}
+		countimages++;
+
+		timerid = setTimeout("startTime()", 1000);
+	};
+	</script>
+</head>
+<!--cursor: crosshair;-->
+<style type="css">
+	div id=img {
+    display: block;
+    margin: 0 auto;
+	width: 40%;
+	margin-left: auto;
+    margin-right: auto; 
+	}
+</style>
+
+<body style="text-color: #FFF" onload="startTime();">>
+<!--DO NOT CHANGE THE LIST -->
+<div id = "header">
+	<ul style>
+
+		<li><img src="images/xzonelogo.png"></li>
+		<li><a href="/">Home</a></li>
+		<li><a href="/news">News</a></li>
+		<li><a href="/forum">Forum</a></li>
+		<li><a href="/wiki">Wiki</a></li>
+	</ul>
+</div>
+
+<div id="img">
+<img id="img1" src="image3.jpg" />
+</div>
+
+  <a href="/game"><img src="images/play.png" alt="play" height="200" width="200"> </a>
+</div>
+<h1 style="color:white">Email suggestions and bugs to: xzonesuggestions@gmail.com</h1>
+
+</body>
+
+</html>
