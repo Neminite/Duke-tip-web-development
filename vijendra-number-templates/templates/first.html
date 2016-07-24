@@ -1,0 +1,11 @@
+<form method = 'post'>
+<h2>I can count upto n ^ 2</h2>
+<br> give me the value of n by default i take 1
+<input type="text" name="n">
+<br>
+<ul>
+    {% for i in range(1,n+1) %}
+    	<li> {{i ** 2}} </li>
+    {% endfor %}
+</ul>
+</form>
