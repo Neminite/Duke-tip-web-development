@@ -1,0 +1,47 @@
+Python:
+	Flask
+	Django
+
+Java:
+	Servlet
+	JSP
+	JSF
+
+PHP:
+	Drupal
+	Wordpress
+	Joomla
+
+JavaScript:
+	AngularJS
+	NodeJS
+	ExpressJS
+	BackboneJS
+	ReactJS
+
+Ruby:
+	Ruby on Rails
+
+.Net:
+	Asp.net
+
+Front-End Design:
+	Javascript
+	HTML5
+	CSS
+	Bootstrap
+	Materailize
+	JQuery
+
+Database:
+	SQL
+	MongoDB
+	SQL-Lite
+
+Mobile Development:
+	Android
+	Swift
+	Cordova
+	PhoneGap
+	Meteor
+	Ionic
