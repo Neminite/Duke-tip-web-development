@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<style>
+		 #page2 {
+    position: absolute;
+    margin: auto;
+    margin-left: 700px;
+    color: blue;
+} 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+</style>
+<ul>
+  <li><a class="active" href="/">Welcome Page</a></li>
+  <li><a href="/creators">About the Creators</a></li>
+  <li><a href="/duketip">Duke TIP</a></li>
+  <li><a href="/jokes">Jokes</a></li>
+  <li><a href="/game">Clicker Game</a></li>
+  <li><a href="/forum">Forums</a></li>
+</ul>
+<br>
+<br>
+<br>
+		<title>Clicker Game</title>
+		<link rel="stylesheet" type="text/css" href="css/Interface.css" />
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+
+	<body>
+	<h1 id="Header">The Clicker Game</h1> <small>Version BETA 1.5.1</small>
+	<br />
+	<small>BETA 1.5.1 Changelog</small>
+	<br />
+	<small>Fixed oven cost bug</small>
+	<br />
+	<p></p>
+	<small>BETA 1.5 Changelog</small>
+	<br />
+	<small>Added Ovens which bake cookies!</small>
+	<br />
+	<small>Added Money (earn by selling baked cookies!)</small>
+	<br />
+	<small>Bug Fixes</small>
+	<br />
+	<p></p>
+	Cookies: <span id="cookies">0</span>
+	<br />
+	Rare Cookies: <span id="rarecookies">0</span>
+	<br />
+	Baked Cookies: <span id="bakedcookies">0</span>
+	<br />
+	Money: <span id="money">0</span>
+	<br />
+	<p></p>
+	Cookie Value: <span id="cpc">1</span> (Cookies Per Click)
+	<br />
+	Baked Value: <span id="bakedvalue">1</span> (1 Baked Cookie = $1)
+	<br />
+	Cursors: <span id="cursors">0</span> (1 Cursor = 1 Cookie / Second)
+	<br />
+	Ovens: <span id="furnaces">0</span> (1 Oven = 1 Baked Cookie / Minute )
+	<br />
+	<p></p>
+	Cookie Upgrade: <span id="upgradeCost">100</span> Cookies
+	<br />
+	Cursor Cost: <span id="cursorCost">10</span> Cookies
+	<br />
+	Oven Cost: <span id="ovenCost">5</span>Rare Cookies
+	<br>
+	<button onClick="cookieClick(cpc);" id="GatherCookies">Gather Cookies</button>
+	<button onClick="sellBaked()" id="SellCookies">Sell Baked Cookies</button>
+	<button onClick="upgradeCookies();" id="UpgradeCookies">Upgrade Cookies</button>
+	<button onClick="buyCursor();" id="PurchaseCursors">Buy Cursors</button>
+	<button onClick="buyOven();" id="PurchaseOven">Buy Ovens</button>
+	</body>
+</html>

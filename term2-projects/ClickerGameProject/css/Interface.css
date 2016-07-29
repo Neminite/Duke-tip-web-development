@@ -1,0 +1,27 @@
+#GatherCookies {
+	background-color:#FFEBCD;
+	display:inline-block;
+}
+#SellCookies {
+	background-color:#FFEBCD;
+}
+#PurchaseCursors {
+	background-color:#E3AB57;
+}
+#Header {
+	display:inline-block;
+}
+#UpgradeCookies {
+	background-color:#E3AB57;
+}
+#PurchaseOven {
+	background-color:#E3AB57;
+}
+#purple {
+	display:inline-block;
+	color:#7D26CD;
+}
+#brown {
+	display:inline-block;
+	color:#E3AB57;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<nav class="navbar navbar-inverse">
+		    <div class="container-fluid">
+		        <div class="navbar-header">
+		      		<a class="navbar-brand" href="#">Project Wobsite</a>
+		    	</div>
+		    	<ul class="nav navbar-nav">
+			        <li><a href="/">Home</a></li>
+			        <li class="active"><a href="/about.html">About</a></li>
+			        <li><a href="/games.html">Games</a></li>
+			        <li><a href="/chatroom.html">Forums</a></li>
+		  	    </ul>
+		  	</div>
+		</nav>
+		<meta charset="utf-8">
+		<title> About us </title>
+		<link rel="stylesheet" href="/sass/style.css" type="text/css">
+		<link rel="stylesheet" href="/sass/bootstrap.css" type="text/css">
+		<link rel="stylesheet" href="/sass/bootstrap-theme.css" type="text/css">
+		<link rel="icon" href="favicon.png" type="image/png" />
+		<script src="/sass/clicker.js"></script>
+	</head>
+	<body class="body-y">
+		<center>
+			<h1 class="big-title-y">Clicker Game</h1>
+			<div class="page-wrapper-y">
+				<center>
+					<button onclick="doubleauto();" id="splitter" title="Doubles Auto Speed" class="btn-default"> Double Autos: $10000 </button>
+					<button onclick="upgradeautos();" id="autotune" title="Increases Auto output" class="btn-default"> Upgrade Autos: $100 </button>
+					<button onclick="upgrade();" id="plusone" title="Increases cash gained from all clicks" class="btn-default"> Upgrade: $10 </button>
+					<button onclick="doubleclick();" id="double" title="Doubles cash gained from all clicks"  class="btn-default"> Double: $500 </button>
+					<br>
+					<button onclick="buttonclick();" id="click-button" title="Primary source of cash"  class="btn-primary">Click!</button>
+					<hr style="height: 3px; background-color: #333333;">
+					<p id="money" class="text-center">
+						$0<br>$1 per click<br>$0 / sec from Autos
+					</p>
+					<button onclick="save();" title="Stores a cookie that saves your progress" class="btn-success"> Save </button>
+					<button onclick="restart();" title="Overwrites progress cookies" class="btn-danger"> Restart </button>
+				</center>
+			</div>
+		</center>
+	<script> updateTickers(); </script>
+	</body>
+</html>

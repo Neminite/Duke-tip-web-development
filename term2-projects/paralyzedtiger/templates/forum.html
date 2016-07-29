@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title> Paralyzed Tiger - Your Source of Tiger Games! </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+	<style type = "text/css">
+		body{
+			font-family: sans-serif;
+			width: 800px;
+			margin: 0 auto;
+			padding: 10px;
+    		background-image: url("http://feelgrafix.com/data/background/background-7.jpg");
+		}
+		.error {
+			color: red;
+		}
+		label {
+			display: block;
+			font-size: 20px;
+		}
+		input[type = text] {
+			width: 400px;
+			height: 20px;
+			font-size: 20px;
+			padding: 2px;		
+		}
+		textarea {
+			width: 400px;
+			height: 200px;
+			font-size: 17px;
+			font-family: monospace;
+		}
+		input[type = submit] {
+			font-size: 24px;			
+		}
+		hr {
+			margin :20px auto;
+		}
+		.art + .art {
+			margin-top: 20px;
+		}
+		.art-body {
+			margin : 0;
+			font-size: 17px;
+		}
+		mark{
+			background-color: #00ff99;
+		} body {margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+	</style>
+	<body>
+	    <meta name="google-signin-scope" content="profile email">
+    <meta name="google-signin-client_id" content="82672605927-uv5n4nqh23nuh20tgqd61aiej3226kdi.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+  </head>
+  <body>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
+    <script>
+      function onSignIn(googleUser) {
+        // Useful data for your client-side scripts:
+        var profile = googleUser.getBasicProfile();
+        console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+        console.log('Full Name: ' + profile.getName());
+        console.log('Given Name: ' + profile.getGivenName());
+        console.log('Family Name: ' + profile.getFamilyName());
+        console.log("Image URL: " + profile.getImageUrl());
+        console.log("Email: " + profile.getEmail());
+
+        // The ID token you need to pass to your backend:
+        var id_token = googleUser.getAuthResponse().id_token;
+        console.log("ID Token: " + id_token);
+        var name = profile.getname();
+      };
+    </script>
+    <a href="#" onclick="signOut();">Sign out</a>
+    <!-- Navigation -->
+    <ul class="topnav">
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="/gameredirect">Games</a></li>
+  <li><a href="/forums">Forums</a></li>
+  <li><a href="/savethetigers">Save the Tigers!</a></li>
+  <li><a href="/duketip">About Duke Tip</a></li>
+  <li class="right"><a href="/aboutus">About Us</a></li>
+</ul>
+	<br>
+	<br>
+		<h1> <font color="black"><mark><strong>Forum</h1></strong></mark>
+		<form method="post">
+			<label>
+				<div> <mark>Put your name!</mark></div>
+				<input type= "hidden" id="myText" name="yo" value="">
+				<input type = "text" name = "title" value = "{{title}}">
+			</label>
+			<label>
+				<div><mark>Comment/Question:</mark></div>
+				<textarea name = "art">{{art}}</textarea>
+			</label>
+			<div class = "error"> {{error}} </div>
+			<input type="submit">
+		</form>
+		<hr>
+		{% for art in arts %}
+			<div class = "art">
+				<div class = "art-title">{{art.title}} </div>
+				<pre class = "art-body"> {{art.art}}</pre>
+			</div>
+		{% endfor %}
+	</body>
+</html>

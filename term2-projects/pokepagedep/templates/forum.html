@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PokePage Forum Page!</title>
+	<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    <body background="hehe.jpg">
+}
+
+.active {
+    <body background="hehe.jpg">
+}
+body {
+    background: url(hehe.jpg) 50% 50% fixed;
+    background-size: 100% 100%;
+}
+</style>
+	</head>
+
+	<style type = "text/css">
+		body{
+			font-family: sans-serif;
+			width: 800px;
+			margin: 0 auto;
+			padding: 10px;
+		}
+		.error {
+			color: red;
+		}
+		label {
+			display: block;
+			font-size: 20px;
+		}
+		input[type = text] {
+			width: 400px;
+			height: 20px;
+			font-size: 20px;
+			padding: 2px;		
+		}
+		textarea {
+			width: 400px;
+			height: 200px;
+			font-size: 17px;
+			font-family: monospace;
+		}
+		input[type = submit] {
+			font-size: 24px;			
+		}
+		hr {
+			margin :20px auto;
+		}
+		.art + .art {
+			margin-top: 20px;
+		}
+		.art-body {
+			margin : 0;
+			font-size: 17px;
+		}
+	</style>
+	<body>
+	<ul>
+  		<li><a href="/">Home</a></li>
+  		<li><a href="/tips">Tips and Tricks</a></li>
+  		<li><a href="/duke_tip">DukeTip</a></li>
+  		<li><a href="/Game">Game</a></li>
+  		<li><a class="active" href="/forum">Forum</a></li>
+	</ul>
+
+		<h1>PokePage Forum Page! Sam is the best RC ever.</h1>
+		<form method="post">
+			<label>
+				<div> title </div>
+				<input type = "text" name = "title" value = "{{title}}">
+			</label>
+			<label>
+				<div>art</div>
+				<textarea name = "art">{{art}}</textarea>
+			</label>
+
+			<div class = "error"> {{error}} </div>
+			<input type="submit">
+
+		</form>
+		<hr>
+		{% for art in arts %}
+			<div class = "art">
+				<div class = "art-title">{{art.title}} </div>
+				<pre class = "art-body"> {{art.art}}</pre>
+			</div>
+		{% endfor %}
+	</body>
+</html>

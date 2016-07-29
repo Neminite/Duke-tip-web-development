@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <title> Paralyzed Tiger - Your Source of Tiger Games! </title>
+    <style>
+    a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+    }
+    </style>
+    </head>
+    <body onload="myFunction()" style="margin:0;" background="http://feelgrafix.com/data/background/background-7.jpg">
+            <h2 style="color: white; font-size: 20px;"> Redirecting in </h2>
+            <div style="color: white; font-size: 20px;" id="counter">10</div>
+            <a href="/games" class="button">Skip Ad</a>
+    <script>
+        setInterval(function() {
+            var div = document.querySelector("#counter");
+            var count = div.textContent * 1 - 1;
+            div.textContent = count;
+            if (count <= 0) {
+                location.href="/games";
+            }
+        }, 1000);
+    </script>
+        <iframe src="http://www.savetigersnow.org" onload="this.width=screen.width;this.height=screen.height;">
+    </body>
+</html>

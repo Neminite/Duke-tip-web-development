@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Us</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head> 
+<body background=http://www.walldevil.com/wallpapers/a42/controller.jpg>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">Gaming Stripdown</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="/fifa">Fifa 16</a></li>
+      <li><a href="/league">League of Legends</a></li>
+      <li><a href="/destiny">Destiny</a></li>
+      <li><a href="/overwatch">Overwatch</a></li>
+      <li><a href="/nba">NBA 2K</a></li>
+      <li class = "active"><a href="/forum">Comments</a></li>
+      <li><a href="/tip">Duke TIP</a></li>
+      <li><a href="/about">About the Creators</a></li>
+      <li><a href="/contact">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+    <form method="post">
+      <label>
+        <div style = "font-size:20px;color:lightgrey">Title</div>
+        <input type = "text" name = "title" value = "{{title}}">
+      </label><br>
+      <label>
+        <div style = "font-size:20px;color:lightgrey">Name</div>
+        <input type = "text" name = "name">{{name}}</textarea>
+      </label><br>
+      <label>
+        <div style = "font-size:20px;color:lightgrey">Body</div>
+        <input type = "text" name = "body" value = "{{body}}">
+      </label><br>
+
+      <div class = "error"> {{error}} </div>
+      <input type="submit">
+    </form>
+    <hr>
+    {% for post in posts %}
+      <div class = "post">
+      			{% if 'http' in comment.comment %}
+					{% if 'youtube' in comment.comment %}	
+						<iframe src="{{comment.comment}}" "width:304px" "height:228px">
+					{% else %}
+						<img src="{{comment.comment}}" alt="Pic" style="width:304px;height:228px;">
+					{% endif %}
+				{% else %}
+				<pre class = "post-title">{{post.title}}<br><br>{{post.name}}<br><br>{{post.body}}</pre><br>
+				{% endif %}
+      </div>
+    {% endfor %}
+  </body>
+</html>

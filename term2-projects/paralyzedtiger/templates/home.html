@@ -1,0 +1,109 @@
+<html>
+<head>
+<title> Paralyzed Tiger - Your Source of Tiger Games! </title>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-81477702-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<style>
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;  
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {background-color: #4CAF50;}
+
+ul.topnav li.right {float: right;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+} #Welcome {
+  text-align: center;
+  color: white;
+  margin-top: 250px;
+  font-family: "Courier New", Courier, monospace; 
+} #paralzyed {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+} 
+
+#myDiv {
+  display: none;
+  text-align: center;
+} .button-NAME {
+     background-color: #216792;
+     border: 0;
+     color: #ffffff;
+     padding: 10px 20px; 
+     font-family: Century Gothic;
+}
+
+.button-NAME:hover {
+     background: #277db1;
+     color: #e4e4e4;
+     text-decoration: none;
+     font-family: Century Gothic;
+} .section1 { 
+    padding-top: 50px;
+    height: "img-responsive";
+    color: #fff;
+    background-image: url("http://feelgrafix.com/data/background/background-7.jpgf");
+     }   
+</style>
+</head>
+<body onload="myFunction()" style="margin:0;" background="http://feelgrafix.com/data/background/background-7.jpg">
+
+<div id="loader"></div>
+<div style="display:none;" id="myDiv" class="animate-bottom">
+<ul class="topnav">
+  <li><a class="active" href="/">Home</a></li>
+  <li><a href="/gameredirect">Games</a></li>
+  <li><a href="/forums">Forums</a></li>
+  <li><a href="/savethetigers">Save the Tigers</a></li>
+  <li><a href="/duketip">About Duke Tip</a></li>
+  <li><a href="/aboutus">About Us</a></li>
+</ul>
+<h1 id="Welcome"> Welcome to </h1>
+<h1 id="paralzyed"> Paralyzed Tiger </h1>
+<a class="button-NAME" href="/gameredirect">View our games!</a>
+<div id="section1" class="container-fluid">
+</div>
+</div>
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 1);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+</body>
+</html>

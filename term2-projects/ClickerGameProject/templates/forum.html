@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+		<link type="text/css" rel="stylesheet" href="css\fire.css"/>
+<ul>
+  <li><a class="active" href="/">Welcome Page</a></li>
+  <li><a href="/creators">About the Creators</a></li>
+  <li><a href="/duketip">Duke TIP</a></li>
+  <li><a href="/jokes">Jokes</a></li>
+  <li><a href="/game">Clicker Game</a></li>
+  <li><a href="/forum">Forums</a></li>
+</ul>
+<br>
+<br>
+<br>
+<br>
+<br>
+	</head>
+
+	<style type = "text/css">
+		#page2 {
+    position: absolute;
+    margin: auto;
+    margin-left: 700px;
+    color: blue;
+	} 
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+   
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+		body{
+			font-family: sans-serif;
+			width: 800px;
+			margin: 0 auto;
+			padding: 10px;
+		}
+		.error {
+			color: red;
+		}
+
+		label {
+			display: block;
+			font-size: 20px;
+		}
+
+		input[type = text] {
+			width: 400px;
+			height: 20px;
+			font-size: 20px;
+			padding: 2px;		
+		}
+
+		textarea {
+			width: 400px;
+			height: 200px;
+			font-size: 17px;
+			font-family: monospace;
+		}
+
+		input[type = submit] {
+			font-size: 24px;			
+		}
+
+		hr {
+			margin :20px auto;
+		}
+
+		.art + .art {
+			margin-top: 20px;
+		}
+		.art-title {
+			font-size:20px;
+		}
+		.art-body {
+			margin : 0;
+			font-size: 16px;
+		}
+		#SpecialTitle {
+			color:#5A66FF;
+		}
+
+
+	</style>
+		<body>
+		<h1>Forums</h1>
+		<form method="post">
+			<label>
+				<div> Name </div>
+				<input type = "text" name = "title" value = "{{title}}">
+			</label>
+			<label>
+				<div>Message</div>
+				<textarea name = "art">{{art}}</textarea>
+			</label>
+			<div class = "alert alert-danger"><strong>{{errortype}}</strong> {{error}} </div>
+			<input type="submit">
+		</form>
+		<hr>
+		{% for art in arts %}
+			<div class = "art">
+				<div class = "art-title"><strong><span id="SpecialTitle"></span>{{art.title}}</strong></div>
+				<pre class = "art-body"> {{art.art}}</pre>
+			</div>
+		{% endfor %}
+	</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+	<head>
+		<nav class="navbar navbar-inverse">
+		    <div class="container-fluid">
+		        <div class="navbar-header">
+		      		<a class="navbar-brand" href="#">Project Wobsite</a>
+		    	</div>
+		    	<ul class="nav navbar-nav">
+			        <li><a href="/">Home</a></li>
+			        <li><a href="/about.html">About</a></li>
+			        <li><a href="/games.html">Games</a></li>
+			        <li class="active"><a href="/chatroom.html">Forums</a></li>
+		  	    </ul>
+		  	</div>
+		</nav>
+		<title>Forums</title>
+		<link rel="stylesheet" href="/sass/style.css" type="text/css">
+		<link rel="stylesheet" href="/sass/bootstrap.css" type="text/css">
+		<link rel="stylesheet" href="/sass/bootstrap-theme.css" type="text/css">
+		<h1 style="text-align:center; color:#77eeee"> Forums </h1>
+	</head>
+	<body style="background:#222222;">
+		<center>
+			<div class="page-wrapper-y">
+				<center>
+					<h3>Post something!</h3>
+					<!--form style="color:black;" method="get">
+						<label>Thread: </label>
+						<select>
+							{%for thread in threads%}
+								<option value="{{thread}}"{% if thread == thread.name %}selected="selected"{%endif%}>{{thread.name}}</option>
+							{%endfor%}
+						</select>
+						<button type="submit">GO</button>
+					</form-->
+					<form method="post" style="color:black;">
+						<style>label{color:#ddeeff;}</style>
+						<label>Name: </label>
+						<input name="name" type="text" value="{{name}}" required="required"></input><br>
+						<textarea name="body" type="textarea" maxlength=500 rows="8" cols="30" wrap="soft" required="required">{{body}}</textarea><br>
+						<button type="submit">Submit</button>
+					</form>
+					<span style="color: #ff0000; text-decoration:bold;">{{error}}</span>
+					<hr>
+					{%for post in posts%}
+						<br><br><br>
+						<div class="text-wrapper-y">
+							<h5>{{post.name}}</h5>
+							<pre>{{post.body}}</pre>
+						</div>
+					{%endfor%}
+				</center>
+			</div>
+		</center>
+	</body>
+</html>
