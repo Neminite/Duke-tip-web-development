@@ -1,6 +1,6 @@
 Python Courses:
-	Python https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-8
-	Udacity cs 253 web
+	Python https://www.edx.org/course/introduction-computer-science-mitx-6-00-1x-8 and 6.002 after this
+	Udacity cs 253 web 
 	Udacity cs 101 (Python very basic)
 	 
 	code academy
@@ -16,4 +16,3 @@ Math khan academy
 AP courses on EDX
 
 vijen1991@gmail.com
-shahvishal8464@gmail.com

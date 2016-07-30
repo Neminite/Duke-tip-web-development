@@ -7,11 +7,6 @@ Java:
 	JSP
 	JSF
 
-PHP:
-	Drupal
-	Wordpress
-	Joomla
-
 JavaScript:
 	AngularJS
 	NodeJS
